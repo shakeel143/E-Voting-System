@@ -1,0 +1,74 @@
+<html>
+ <head>
+   <title>e-voting system for 2019</title>
+
+
+   <script>
+
+     function validation(){
+
+       var fname = document.getElementById("fname").value;
+       var lname = document.getElementById("lname").value;
+       var plus= fname+ " " + lname;
+
+       if(fname!==""){
+              
+               alert("welcome Mr." +plus);
+       }else{
+
+       }     
+
+}
+     
+
+     </script>
+
+
+
+</head>
+
+<body bgcolor="lightgreen">
+  <form>
+<fieldset>
+<legend> E-Voting System
+</legend>
+<table boder="4" ><img src="logo.png">
+<tr>
+ <td>First Name</td><td><input type="text" id="fname" autofocus>
+</tr>
+<tr>
+ <td>Last Name</td><td><input type="text" id="lname">
+</tr>
+<tr>
+ <td>Address</td><td><input type="text" >
+</tr>
+<td>CNIC</td><td><input type="number">
+</tr>
+
+<tr>
+<td> Candidate Name</td><td><select>
+                       <option>BILAWAL BHUTTO ZARDARI  <img src=""></option>
+                       <option>ZAIN SHAH</option>
+                       <option>ALTAF HUSSAIN</option>
+                       <option>IMRAN KHAN</option>
+                       <option>QADIR KHAN MAGSI</option>
+                       <option>NAWAZ SHAREEF</option>
+</tr>
+<td>Party</td><td><select>
+                       <option>PPP</option>
+                       <option>GDA</option>
+                       <option>MQM</option>
+                       <option>PTI</option>
+                       <option>SUP</option>
+                       <option>PML N</option>
+                       <option>AATPK</option> 
+</tr>
+<tr><td>Sex</td><td><input type="radio" name="e">Male<input type="radio" name="e">Female</td></tr><br><br>
+</td>
+</tr>
+</table>
+<input type="submit" value="Submit" onclick="validation()">
+</form>
+</fieldset>
+</body>                      
+</html>
